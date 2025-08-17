@@ -2,9 +2,8 @@
 name = "vt-roast"
 version = "0.1.0"
 edition = "2021"
-description = "A hilarious Rust library to track and alert you to new content from the Vegan Teacher, making it easy to join the public discourse. 😂"
-license = "MIT"
-readme = "README.md"
-repository = "https://github.com/3Rr0RHACK3R/vt-roast-rs.git" # CHANGE THIS!
-keywords = ["roast", "comedy", "funny", "web-scraping", "api"]
-categories = ["web-programming", "command-line-utilities"] # Pick from Crates.io's list
+
+[dependencies]
+reqwest = { version = "0.12", features = ["blocking"] }
+scraper = "0.19"
+chrono = "0.4"
